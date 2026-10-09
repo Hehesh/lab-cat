@@ -10,7 +10,6 @@ def cat(file):
         if not data:
             break
         sys.stdout.buffer.write(data)
-        sys.stdout.buffer.flush()  # Ensure immediate write to avoid buffer bloat
 
 if __name__ == "__main__":
     try:
